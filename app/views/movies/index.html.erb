@@ -1,0 +1,8 @@
+<h1>Voici la liste des films enregistés : </h1>
+<% @movies.each do |movie| %>
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item" ><%= movie.title %>, réalisé par <%= movie.director %>, sorti en <%= movie.release_year %></li>
+        </ul>
+    </div>
+<% end %>
