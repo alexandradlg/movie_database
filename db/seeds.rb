@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Movie.all.destroy
-
 Movie.create(title: "Into the Wild", release_year: 2007, director: "Sean Penn")
 Movie.create(title: "The Rocky Horror Picture Show", release_year: 1975, director: "Jim Sharman")
 Movie.create(title: "Okja", release_year: 2017, director: "Bong Joon-ho")
