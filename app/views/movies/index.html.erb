@@ -2,7 +2,7 @@
 <% @movies.each do |movie| %>
     <div>
         <ul class="list-group">
-            <li class="list-group-item" ><%= movie.title %>, réalisé par <%= movie.director %>, sorti en <%= movie.release_year %></li>
+            <li class="list-group-item" > <%= movie.title %>, réalisé par <%= movie.director.first_name %> <%= movie.director.last_name %>, sorti en <%= movie.release_year %></li>
         </ul>
     </div>
 <% end %>
